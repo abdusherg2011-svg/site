@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS — Студия цифровых решений нового поколения</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Навигация / Sticky Header -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="#" class="logo">
+                <span class="logo__icon"></span>
+                <span class="logo__text">NEXUS<span class="logo__dot">.</span></span>
+            </a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="#about" class="nav__link">О нас</a></li>
+                    <li><a href="#advantages" class="nav__link">Преимущества</a></li>
+                    <li><a href="#services" class="nav__link">Услуги</a></li>
+                    <li><a href="#stats" class="nav__link">Цифры</a></li>
+                    <li><a href="#contacts" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <a href="#contacts" class="btn btn--primary btn--sm header__btn">Обсудить проект</a>
+                <button class="burger" id="burger" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Секция -->
+        <section class="hero">
+            <div class="hero__glow hero__glow--1"></div>
+            <div class="hero__glow hero__glow--2"></div>
+            
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <div class="badge">
+                        <span class="badge__dot"></span>
+                        Студия цифрового дизайна & разработки
+                    </div>
+                    <h1 class="hero__title">Создаем интерфейсы, которые <span class="text-gradient">вдохновляют</span> и продают</h1>
+                    <p class="hero__subtitle">Проектируем и запускаем премиальные веб-сайты, сложные веб-сервисы и мобильные продукты с акцентом на UX, эстетику и конверсию.</p>
+                    
+                    <div class="hero__buttons">
+                        <a href="#contacts" class="btn btn--primary">
+                            <span>Заказать проект</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                        <a href="#services" class="btn btn--glass">Наши услуги</a>
+                    </div>
+                </div>
+
+                <div class="hero__visual">
+                    <div class="hero__card glass-panel">
+                        <div class="hero__card-header">
+                            <div class="hero__dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span class="hero__card-title">nexus_design_system.config</span>
+                        </div>
+                        <div class="hero__card-body">
+                            <div class="code-preview">
+                                <span class="code-keyword">const</span> studio = <span class="code-keyword">new</span> Studio({<br>
+                                &nbsp;&nbsp;quality: <span class="code-string">'Awwwards Standard'</span>,<br>
+                                &nbsp;&nbsp;speed: <span class="code-string">'Maximum'</span>,<br>
+                                &nbsp;&nbsp;stack: [<span class="code-string">'Vanilla JS'</span>, <span class="code-string">'WebGL'</span>, <span class="code-string">'CSS3'</span>],<br>
+                                &nbsp;&nbsp;result: <span class="code-string">'100% Growth'</span><br>
+                                });<br><br>
+                                studio.<span class="code-func">launchNextProject</span>();
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преимущества -->
+        <section class="section" id="advantages">
+            <div class="container">
+                <div class="section__header text-center">
+                    <h2 class="section__title">Почему выбирают <span class="text-gradient">NEXUS</span></h2>
+                    <p class="section__subtitle">Мы совмещаем инженерный подход к коду с бескомпромиссным продуктовым дизайном.</p>
+                </div>
+
+                <div class="grid grid--3">
+                    <div class="card glass-card">
+                        <div class="card__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                        </div>
+                        <h3 class="card__title">Молниеносная скорость</h3>
+                        <p class="card__text">Чистый HTML, CSS и JS без тяжелых сторонних фреймворков обеспечат загрузку за миллисекунды.</p>
+                    </div>
+
+                    <div class="card glass-card">
+                        <div class="card__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <h3 class="card__title">Премиальный UX/UI</h3>
+                        <p class="card__text">Современная эстетика в стиле Apple и Stripe. Каждый пиксель и анимация работают на выверенный UX.</p>
+                    </div>
+
+                    <div class="card glass-card">
+                        <div class="card__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                        </div>
+                        <h3 class="card__title">Полная SEO-адаптивность</h3>
+                        <p class="card__text">Семантическая верстка, идеальные показатели Google Lighthouse и адаптация под любые экраны.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- О нас -->
+        <section class="section section--dark" id="about">
+            <div class="container grid grid--2 grid--align-center">
+                <div class="about__content">
+                    <div class="badge">О студии</div>
+                    <h2 class="section__title">Создаем цифровые продукты с <span class="text-gradient">фокусом на результат</span></h2>
+                    <p class="about__text">NEXUS — команда экспертов с опытом работы над международными продуктами. Мы не используем шаблонные решения: каждый проект разрабатывается с нуля под бизнес-цели клиента.</p>
+                    <p class="about__text">Наша цель — превратить сложные пользовательские сценарии в понятные, красивые и технологичные решения.</p>
+                    <div class="about__features">
+                        <div class="about__feature">
+                            <span class="about__check">✓</span> 100% кастомный код без Tilda/WordPress
+                        </div>
+                        <div class="about__feature">
+                            <span class="about__check">✓</span> Аналитика и UX-исследования перед версткой
+                        </div>
+                        <div class="about__feature">
+                            <span class="about__check">✓</span> Поддержка и развитие после релиза
+                        </div>
+                    </div>
+                </div>
+                <div class="about__visual glass-card">
+                    <div class="about__stat-box">
+                        <span class="about__number text-gradient">99.8%</span>
+                        <span class="about__label">Uptime и отказоустойчивость решений</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Услуги -->
+        <section class="section" id="services">
+            <div class="container">
+                <div class="section__header text-center">
+                    <h2 class="section__title">Наши <span class="text-gradient">услуги</span></h2>
+                    <p class="section__subtitle">Полный цикл создания современных цифровых сервисов</p>
+                </div>
+
+                <!-- Табы для фильтрации -->
+                <div class="tabs">
+                    <button class="tabs__btn active" data-tab="all">Все услуги</button>
+                    <button class="tabs__btn" data-tab="web">Веб-разработка</button>
+                    <button class="tabs__btn" data-tab="design">Дизайн & UX</button>
+                </div>
+
+                <div class="grid grid--3 services__grid">
+                    <div class="card glass-card service-card" data-category="web">
+                        <h3 class="card__title">Promo & Landing Pages</h3>
+                        <p class="card__text">Высококонверсионные промо-страницы с интерактивной 3D-графикой и анимацией.</p>
+                        <div class="card__price">от $1,500</div>
+                    </div>
+
+                    <div class="card glass-card service-card" data-category="web">
+                        <h3 class="card__title">Веб-приложения (SPA)</h3>
+                        <p class="card__text">Сложные клиентские панели, дашборды и SaaS-платформы с высокой производительностью.</p>
+                        <div class="card__price">от $4,000</div>
+                    </div>
+
+                    <div class="card glass-card service-card" data-category="design">
+                        <h3 class="card__title">UI/UX Проектирование</h3>
+                        <p class="card__text">Глубокий анализ аудитории, кликабельные прототипы и дизайн-системы в Figma.</p>
+                        <div class="card__price">от $2,000</div>
+                    </div>
+
+                    <div class="card glass-card service-card" data-category="design">
+                        <h3 class="card__title">Ребрендинг & Айдентика</h3>
+                        <p class="card__text">Создание фирменного стиля, логотипов и брендбуков для технологических компаний.</p>
+                        <div class="card__price">от $1,800</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Статистика с счетчиками -->
+        <section class="section section--stats" id="stats">
+            <div class="container">
+                <div class="stats__grid">
+                    <div class="stat-item glass-card">
+                        <div class="stat-item__number text-gradient" data-target="85">0</div>
+                        <div class="stat-item__label">Завершенных проектов</div>
+                    </div>
+                    <div class="stat-item glass-card">
+                        <div class="stat-item__number text-gradient" data-target="14">0</div>
+                        <div class="stat-item__label">Наград Awwwards & FWA</div>
+                    </div>
+                    <div class="stat-item glass-card">
+                        <div class="stat-item__number text-gradient" data-target="99">0</div>
+                        <div class="stat-item__label">% Довольных клиентов</div>
+                    </div>
+                    <div class="stat-item glass-card">
+                        <div class="stat-item__number text-gradient" data-target="6">0</div>
+                        <div class="stat-item__label">Лет опыта на рынке</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты и форма -->
+        <section class="section" id="contacts">
+            <div class="container">
+                <div class="contacts__wrapper glass-card">
+                    <div class="contacts__info">
+                        <h2 class="section__title">Давайте обсудим <br><span class="text-gradient">ваш следующий проект</span></h2>
+                        <p class="contacts__text">Заполните форму, и мы свяжемся с вами в течение 2 часов для обсуждения деталей и оценки бюджета.</p>
+                        
+                        <div class="contacts__details">
+                            <div class="contacts__item">
+                                <strong>Email:</strong> hello@nexus-studio.com
+                            </div>
+                            <div class="contacts__item">
+                                <strong>Telegram:</strong> @nexus_digital
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="form" id="contactForm">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Ваше имя</label>
+                            <input type="text" id="name" class="form__input" placeholder="Алексей" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email или Telegram</label>
+                            <input type="text" id="email" class="form__input" placeholder="alex@company.com" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="message" class="form__label">О проекте</label>
+                            <textarea id="message" class="form__textarea" rows="4" placeholder="Расскажите о вашей задаче и сроках..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+                        <div class="form__status" id="formStatus"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__brand">
+                <a href="#" class="logo">
+                    <span class="logo__text">NEXUS<span class="logo__dot">.</span></span>
+                </a>
+                <p class="footer__copy">© 2026 NEXUS Creative Studio. Все права защищены.</p>
+            </div>
+            <div class="footer__links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js" defer></script>
+</body>
+</html>
